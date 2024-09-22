@@ -14,4 +14,43 @@ function addElementToArray(array, element) {}
 
 function addElementToNewArray(array, element) {}
 
-export { addElementToArray, addElementToNewArray };
+/**
+ * Напишите функцию addElementToNewArrayByIndex(array, element, index), которая в качестве первого аргумента принимает массив строк,
+ * в качестве второго аргумента принимает строку,
+ * в качестве третьего индекс по которому в массив необходимо встать значение,
+ * и возвращает НОВЫЙ МАССИВ в с добавленным элементом по переданному индексу, переданный массив не должен поменяться
+ *
+ *
+ * Пример:
+ * array = ['1', '2', '3', '4'];
+ * element = 'element';
+ * index = 2
+ *
+ * функция должна вернуть ['1', '2', 'element', '3', '4']
+ */
+
+function addElementToNewArrayByIndex(array, element, index) {}
+
+/**
+ * Напишите функцию addElementToNewArrayByIndex(array, element, index), которая в качестве первого аргумента принимает массив строк,
+ * в качестве второго аргумента принимает строку,
+ * в качестве третьего индекс по которому в массив необходимо встать значение,
+ * и возвращает ПЕРЕДАННЫЙ МАССИВ в с добавленным элементом по переданному индексу
+ *
+ *
+ * Пример:
+ * array = ['1', '2', '3', '4'];
+ * element = 'element';
+ * index = 2
+ *
+ * функция должна вернуть ['1', '2', 'element', '3', '4']
+ */
+
+function addElementToArrayByIndex(array, element, index) {}
+
+export {
+  addElementToArray,
+  addElementToNewArray,
+  addElementToArrayByIndex,
+  addElementToNewArrayByIndex
+};
