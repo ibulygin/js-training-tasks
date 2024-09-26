@@ -6,7 +6,14 @@
  *  * P.S. если индекс больше длинны массива вернуть исходный массив
  */
 
-function removeElementFromArray(array, index) {}
+function removeElementFromArray(array, index) {
+    array.splice(index, 1);
+
+    if(index > array.length){
+        return array
+    }
+    return array;
+}
 
 /**
  * Напишите функцию removeElementFromNewArray, которая в качестве первого аргумента принимает массив строк,
@@ -16,6 +23,10 @@ function removeElementFromArray(array, index) {}
  * P.S. если индекс больше длинны массива вернуть копию исходного массив
  */
 
-function removeElementFromNewArray(array, index) {}
+function removeElementFromNewArray(array, index) {
+    if(index > array.length){
+        return array.slice();
+    }
+}
 
 export { removeElementFromArray, removeElementFromNewArray };
