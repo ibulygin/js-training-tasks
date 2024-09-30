@@ -23,9 +23,12 @@ function removeElementFromArray(array, index) {
  */
 
 function removeElementFromNewArray(array, index) {
+    const newArray = array.slice();
+    newArray.splice(index, 1);
     if(index > array.length){
         return array.slice();
     }
+  return newArray;
 }
 
 export { removeElementFromArray, removeElementFromNewArray };
