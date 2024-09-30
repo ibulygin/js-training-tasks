@@ -17,7 +17,8 @@ function addElementToArray(array, element) {
 
 function addElementToNewArray(array, element) {
   const newArray = array.slice();
-  newArray.push(element);
+  newArray.push(element)
+  
   return newArray;
 }
 

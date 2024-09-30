@@ -8,7 +8,6 @@
 
 function removeElementFromArray(array, index) {
     array.splice(index, 1);
-
     if(index > array.length){
         return array
     }
