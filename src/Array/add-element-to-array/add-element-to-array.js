@@ -4,7 +4,10 @@
  * из второго аргумента функции
  */
 
-function addElementToArray(array, element) {}
+function addElementToArray(array, element) {
+  array.push(element);
+  return array;
+}
 
 /**
  * Напишите функцию addElementToArray, которая в качестве первого аргумента принимает массив строк,
@@ -12,7 +15,12 @@ function addElementToArray(array, element) {}
  * из второго аргумента функции, ИСХОДНЫЙ МАССИВ НЕ ДОЛЖЕН МЕНЯТЬСЯ
  */
 
-function addElementToNewArray(array, element) {}
+function addElementToNewArray(array, element) {
+  const newArray = array.slice();
+  newArray.push(element)
+  
+  return newArray;
+}
 
 /**
  * Напишите функцию addElementToNewArrayByIndex(array, element, index), которая в качестве первого аргумента принимает массив строк,
@@ -29,7 +37,11 @@ function addElementToNewArray(array, element) {}
  * функция должна вернуть ['1', '2', 'element', '3', '4']
  */
 
-function addElementToNewArrayByIndex(array, element, index) {}
+function addElementToNewArrayByIndex(array, element, index) {
+  const newArray = array.slice();
+  newArray.splice(index, 0, element);
+  return newArray;
+}
 
 /**
  * Напишите функцию addElementToNewArrayByIndex(array, element, index), которая в качестве первого аргумента принимает массив строк,
@@ -46,7 +58,10 @@ function addElementToNewArrayByIndex(array, element, index) {}
  * функция должна вернуть ['1', '2', 'element', '3', '4']
  */
 
-function addElementToArrayByIndex(array, element, index) {}
+function addElementToArrayByIndex(array, element, index) {
+  array.splice(index, 0, element);
+  return array;
+}
 
 export {
   addElementToArray,
