@@ -13,6 +13,9 @@
  * Результат: ['1', '2', '69', '4', '5'];
  */
 
-function replaceElementIntoArray() {}
+function replaceElementIntoArray(array, index, element) {
+    array.splice(index, 1, element);
+    return array;
+}
 
 export { replaceElementIntoArray };

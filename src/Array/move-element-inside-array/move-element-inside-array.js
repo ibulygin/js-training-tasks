@@ -10,7 +10,7 @@
  *
  * moveElementInsideArray(array, index, element)
  *
- * Результат: ['2', '3', '4','1' '5'];
+ * Результат: ['1', '3', '4','2' '5'];
  *
  * Пример 2:
  * array = ['1', '2', '3', '4', '5'];
@@ -22,6 +22,11 @@
  * Результат: ['1', '4', '2', '3', '5'];
  */
 
-function moveElementInsideArray() {}
+function moveElementInsideArray(array, indexFrom, indexTo) {
+    const newArray = array.slice();
+    const item = newArray.splice(indexFrom, 1);
+    newArray.splice(indexTo, 0, item[0]);
+    return newArray;
+}
 
 export { moveElementInsideArray };

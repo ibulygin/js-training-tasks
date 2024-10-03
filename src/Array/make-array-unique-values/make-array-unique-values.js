@@ -19,6 +19,11 @@
  * Результат: ['1', '2', '3'];
  */
 
-function makeArrayUniqueValues() {}
+function makeArrayUniqueValues(array1, array2) {
+    const uniqueArray1 = [...new Set(array1)];
+    const uniqueArray2 = [...new Set(array2)];
+    const newArray = [...uniqueArray1, ...uniqueArray2];
+    return newArray;
+}
 
 export { makeArrayUniqueValues };
