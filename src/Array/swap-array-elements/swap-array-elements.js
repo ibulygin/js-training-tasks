@@ -23,6 +23,9 @@
  * Результат: ['1', '4', '3', '2', '5'];
  */
 
-function swapArrayElements() {}
+function swapArrayElements(array, indexFrom, indexTo) {
+    [array[indexFrom], array[indexTo]] = [array[indexTo], array[indexFrom]];
+    return array;
+}
 
 export { swapArrayElements };
